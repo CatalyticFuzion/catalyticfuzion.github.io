@@ -14,11 +14,11 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/' 
   // For organization sites or user sites with format [username].github.io, use '/'
-  baseUrl: '/',
+  baseUrl: '/CatalyticFuzion/',
   
   // GitHub pages deployment config.
   organizationName: 'CatalyticFuzion', // GitHub organization name - case-sensitive!
-  projectName: 'catalyticfuzion.github.io', // Repository name for organization site
+  projectName: 'CatalyticFuzion', // Repository name
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
