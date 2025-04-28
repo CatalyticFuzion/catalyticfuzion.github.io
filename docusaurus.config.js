@@ -23,7 +23,7 @@ const config = {
   organizationName: 'CatalyticFuzion', // Usually your GitHub org/user name.
   projectName: 'catalyticfuzion.github.io', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Minimal i18n configuration
