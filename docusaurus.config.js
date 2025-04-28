@@ -40,14 +40,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/', // Ændrer docs basis-stien til rod
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
           editUrl:
             'https://github.com/catalyticfuzion/catalyticfuzion.github.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             'https://github.com/catalyticfuzion/catalyticfuzion.github.io/tree/main/',
         },
@@ -62,12 +61,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/catalyticfuzion-social-card.jpg',
+      image: 'img/octo.png',
       navbar: {
         title: 'CatalyticFuzion',
         logo: {
           alt: 'CatalyticFuzion Logo',
-          src: 'img/logo.svg',
+          src: 'img/octo.webp',
         },
         items: [
           {
@@ -76,7 +75,7 @@ const config = {
             position: 'left',
             label: 'Dokumentation',
           },
-          {to: '/docs/intro', label: 'Kom i gang', position: 'left'},
+          {to: '/', label: 'Kom i gang', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
@@ -97,11 +96,11 @@ const config = {
             items: [
               {
                 label: 'Introduktion',
-                to: '/docs/intro',
+                to: '/',
               },
               {
                 label: 'Installation',
-                to: '/docs/category/getting-started',
+                to: '/category/getting-started',
               },
             ],
           },
