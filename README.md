@@ -1,24 +1,41 @@
-# CatalyticFuzion
+# Website
 
-CatalyticFuzion is a modern BDD (Behavior-Driven Development) tool for AI LLM pair development.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## About the Project
+### Installation
 
-This repository contains the source code for the CatalyticFuzion documentation project, built with Docusaurus. The built site is automatically deployed to the [catalyticfuzion.github.io](https://github.com/CatalyticFuzion/catalyticfuzion.github.io) repository and hosted via GitHub Pages.
+```
+$ yarn
+```
 
-## Documentation
+### Local Development
 
-To visit the full documentation, go to [https://catalyticfuzion.github.io/](https://catalyticfuzion.github.io/)
+```
+$ yarn start
+```
 
-## Repository Structure
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-- **Source Code**: [github.com/CatalyticFuzion/CatalyticFuzion](https://github.com/CatalyticFuzion/CatalyticFuzion)
-- **Deployed Site**: [github.com/CatalyticFuzion/catalyticfuzion.github.io](https://github.com/CatalyticFuzion/catalyticfuzion.github.io)
+### Build
 
-## Development
+```
+$ yarn build
+```
 
-The project is built with Docusaurus, a modern static website tool.
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-To run the project locally:
+### Deployment
 
-1. Install dependencies:
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
