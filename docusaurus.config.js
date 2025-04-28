@@ -23,8 +23,8 @@ const config = {
   organizationName: 'CatalyticFuzion', // Usually your GitHub org/user name.
   projectName: 'catalyticfuzion.github.io', // Usually your repo name.
 
-  onBrokenLinks: 'ignore', // ⚠️ Ignore broken links completely (needed for build)
-  onBrokenMarkdownLinks: 'ignore', // ⚠️ Ignore broken markdown links
+  onBrokenLinks: 'warn', // Warn about broken links instead of failing build
+  onBrokenMarkdownLinks: 'warn', // Warn about broken markdown links
   
   // Minimal i18n configuration
   i18n: {
@@ -38,7 +38,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/', // Changed docs base path to root
+          routeBasePath: 'docs', // Use /docs prefix for documentation
           sidebarPath: './sidebars.js',
           editUrl:
             'https://github.com/catalyticfuzion/catalyticfuzion.github.io/tree/main/',
@@ -69,7 +69,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/', label: 'Get Started', position: 'left'},
+          {to: '/docs/intro', label: 'Get Started', position: 'left'},
           {
             href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
             label: 'GitHub',
@@ -85,11 +85,11 @@ const config = {
             items: [
               {
                 label: 'Introduction',
-                to: '/',
+                to: '/docs/intro',
               },
               {
                 label: 'Installation',
-                to: '/category/getting-started',
+                to: '/docs/category/getting-started',
               },
             ],
           },

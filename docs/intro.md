@@ -1,5 +1,5 @@
 ---
-slug: /
+slug: /intro
 title: Introduction to CatalyticFuzion
 sidebar_position: 1
 ---

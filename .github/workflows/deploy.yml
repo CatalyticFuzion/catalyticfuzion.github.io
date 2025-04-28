@@ -44,8 +44,9 @@ jobs:
           cp README.md _backup/ || echo "No README.md to backup"
           cp package.json _backup/ || echo "No package.json to backup"
       
-          # Remove current installation
+          # Remove current installation and conflicting config files
           rm -rf node_modules package-lock.json .docusaurus build
+          rm -f docusaurus.config.ts || echo "No docusaurus.config.ts to remove"
           
           # Create a completely fresh Docusaurus installation non-interactively
           # Avoiding the problematic arguments that caused the previous error
