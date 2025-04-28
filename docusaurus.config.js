@@ -26,19 +26,13 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Setting the language tag for the site
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
-
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/', // Ændrer docs basis-stien til rod
+          routeBasePath: '/', // Changed docs base path to root
           sidebarPath: './sidebars.js',
           editUrl:
             'https://github.com/catalyticfuzion/catalyticfuzion.github.io/tree/main/',
@@ -103,6 +97,29 @@ const config = {
             items: [
               {
                 label: 'GitHub Discussions',
+                href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io/discussions',
+              },
+              {
+                label: 'Issues',
+                href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io/issues',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} CatalyticFuzion. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
