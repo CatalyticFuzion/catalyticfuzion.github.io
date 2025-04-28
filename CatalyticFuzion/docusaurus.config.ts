@@ -40,7 +40,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/CatalyticFuzion/CatalyticFuzion/tree/main/CatalyticFuzion',
+            'https://github.com/CatalyticFuzion/catalyticfuzion.github.io/tree/main',
                   },
                   blog: {
           showReadingTime: true,
@@ -50,7 +50,7 @@ const config: Config = {
           },
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/CatalyticFuzion/CatalyticFuzion/tree/main/CatalyticFuzion',
+            'https://github.com/CatalyticFuzion/catalyticfuzion.github.io/tree/main',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -81,7 +81,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/CatalyticFuzion/CatalyticFuzion',
+          href: 'https://github.com/CatalyticFuzion/catalyticfuzion.github.io',
           label: 'GitHub',
           position: 'right',
         },
@@ -104,7 +104,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/CatalyticFuzion/CatalyticFuzion',
+              href: 'https://github.com/CatalyticFuzion/catalyticfuzion.github.io',
             },
           ],
         },
