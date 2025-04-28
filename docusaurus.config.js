@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CatalyticFuzion',
-  tagline: 'Gherkin-drevet BDD i C# med naturlig integration',
+  tagline: 'Gherkin-driven BDD in C# with natural integration',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -30,8 +30,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'da',
-    locales: ['da', 'en'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -73,17 +73,13 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Dokumentation',
+            label: 'Documentation',
           },
-          {to: '/', label: 'Kom i gang', position: 'left'},
+          {to: '/', label: 'Get Started', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
             label: 'GitHub',
-            position: 'right',
-          },
-          {
-            type: 'localeDropdown',
             position: 'right',
           },
         ],
@@ -92,10 +88,10 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Dokumentation',
+            title: 'Documentation',
             items: [
               {
-                label: 'Introduktion',
+                label: 'Introduction',
                 to: '/',
               },
               {
@@ -109,29 +105,6 @@ const config = {
             items: [
               {
                 label: 'GitHub Discussions',
-                href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io/discussions',
-              },
-              {
-                label: 'Issues',
-                href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io/issues',
-              },
-            ],
-          },
-          {
-            title: 'Mere',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} CatalyticFuzion. Bygget med Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
