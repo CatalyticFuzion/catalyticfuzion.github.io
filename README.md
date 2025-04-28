@@ -4,11 +4,16 @@ CatalyticFuzion is a modern BDD (Behavior-Driven Development) tool for AI LLM pa
 
 ## About the Project
 
-This repository contains documentation and resources for the CatalyticFuzion project, built with Docusaurus and hosted on GitHub Pages.
+This repository contains the source code for the CatalyticFuzion documentation project, built with Docusaurus. The built site is automatically deployed to the [catalyticfuzion.github.io](https://github.com/CatalyticFuzion/catalyticfuzion.github.io) repository and hosted via GitHub Pages.
 
 ## Documentation
 
-To visit the full documentation, go to [https://catalyticfuzion.github.io/CatalyticFuzion/](https://catalyticfuzion.github.io/CatalyticFuzion/)
+To visit the full documentation, go to [https://catalyticfuzion.github.io/](https://catalyticfuzion.github.io/)
+
+## Repository Structure
+
+- **Source Code**: [github.com/CatalyticFuzion/CatalyticFuzion](https://github.com/CatalyticFuzion/CatalyticFuzion)
+- **Deployed Site**: [github.com/CatalyticFuzion/catalyticfuzion.github.io](https://github.com/CatalyticFuzion/catalyticfuzion.github.io)
 
 ## Development
 
