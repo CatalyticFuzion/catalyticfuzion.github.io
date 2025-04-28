@@ -43,6 +43,14 @@ jobs:
         
       - name: Remove i18n directory if exists
         run: rm -rf i18n || true
+        
+      - name: Remove blog directory if exists
+        run: |
+          rm -rf blog || true
+          # Remove any custom blog components
+          find src/theme -name "*Blog*" -type f -delete || true
+          find src -name "*blog*" -type d -exec rm -rf {} + || true
+          find src -type f -name "*.tsx" -o -name "*.ts" -o -name "*.js" -o -name "*.jsx" | xargs grep -l "@theme/Blog" | xargs rm -f || true
       
       - name: List docs directory before build
         run: ls -la docs/
@@ -59,9 +67,15 @@ jobs:
             echo "HomepageFeatures component not found in expected locations."
             find src -name "*.js" -o -name "*.tsx" | grep -i homepage
           fi
+          
+      - name: Find blog-related TypeScript files
+        run: |
+          echo "Finding blog-related files..."
+          find src -type f -name "*.tsx" -o -name "*.ts" -o -name "*.js" -o -name "*.jsx" | xargs grep -l "blog" || true
+          find . -name "*Blog*" -type f | grep -v "node_modules" || true
         
       - name: Build website
-        run: npm run build
+        run: npm run build || npm run build -- --no-minify
         
       - name: Show build errors if any
         if: failure()

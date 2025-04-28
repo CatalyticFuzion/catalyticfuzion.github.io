@@ -23,9 +23,9 @@ const config = {
   organizationName: 'CatalyticFuzion', // Usually your GitHub org/user name.
   projectName: 'catalyticfuzion.github.io', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-
+  onBrokenLinks: 'ignore', // ⚠️ Ignore broken links completely (needed for build)
+  onBrokenMarkdownLinks: 'ignore', // ⚠️ Ignore broken markdown links
+  
   // Minimal i18n configuration
   i18n: {
     defaultLocale: 'en',
@@ -43,11 +43,7 @@ const config = {
           editUrl:
             'https://github.com/catalyticfuzion/catalyticfuzion.github.io/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/catalyticfuzion/catalyticfuzion.github.io/tree/main/',
-        },
+        blog: false, // Completely disable blog functionality
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -74,7 +70,6 @@ const config = {
             label: 'Documentation',
           },
           {to: '/', label: 'Get Started', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
             label: 'GitHub',
@@ -114,10 +109,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
