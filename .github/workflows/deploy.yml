@@ -9,7 +9,7 @@ on:
 
 # Set required permissions for GitHub Pages
 permissions:
-  contents: write # Changed from 'read' to 'write' to allow pushing to another repo
+  contents: read
   pages: write
   id-token: write
 
@@ -31,19 +31,29 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: npm
-          cache-dependency-path: CatalyticFuzion/package-lock.json
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
       
       - name: Install dependencies
-        run: cd CatalyticFuzion && npm ci
+        run: npm ci
       
       - name: Build website
-        run: cd CatalyticFuzion && npm run build
-
-      - name: Deploy to catalyticfuzion.github.io
-        uses: JamesIves/github-pages-deploy-action@v4
+        run: npm run build
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: CatalyticFuzion/build
-          token: ${{ secrets.DEPLOY_TOKEN }}
-          repository-name: CatalyticFuzion/catalyticfuzion.github.io
-          branch: main
+          path: build
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
