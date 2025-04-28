@@ -1,41 +1,26 @@
-# Website
+## CatalyticFuzion
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+CatalyticFuzion is an innovative project aimed at creating a Human-to-AI Domain Specific Language (DSL) by building on concepts from [Gherkin](https://cucumber.io/docs/gherkin/) and object-oriented programming paradigms.
 
-### Installation
+## Vision
 
-```
-$ yarn
-```
+The project originally started as "GherkinSharp," inspired by the Behavior-Driven Development (BDD) paradigm, but has evolved into CatalyticFuzion as we move beyond traditional BDD constraints toward a more flexible and powerful human-AI interface.
 
-### Local Development
+Our goal is to create a DSL that:
+- Makes it easier for humans to communicate complex concepts to AI systems
+- Leverages the best of both Gherkin's readable syntax and object-oriented programming
+- Acts as a catalyst for effective human-AI collaboration
 
-```
-$ yarn start
-```
+## Resources
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- **Documentation:** [CatalyticFuzion Website](https://catalyticfuzion.github.io)
+- **Gherkin Reference:** [Cucumber Gherkin Docs](https://cucumber.io/docs/gherkin/)
 
-### Build
+## Development
 
-```
-$ yarn build
-```
+This repository contains both the source code and documentation for the CatalyticFuzion project. The documentation website is built using [Docusaurus](https://docusaurus.io/).
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+---
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Regards,  
+TwistedBrain

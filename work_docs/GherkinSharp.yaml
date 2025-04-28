@@ -1,0 +1,45 @@
+gherkin_sharp_spec:
+  structure_order:
+    - meta_tags
+    - feature
+    - background
+    - methods
+    - scenarios
+    - examples (optional)
+
+  meta_tags:
+    - @class: (required) defines the public class name
+    - @method: (optional) defines a public method inside the class
+    - @input: (optional) defines method input parameters
+    - @output: (optional) defines method output
+    - @dependencies: (optional) lists dependent classes or external APIs
+    - @datamodel: (optional) defines a data structure
+    - @fields: (optional) fields for a datamodel
+
+  gherkin_syntax:
+    - Feature: short description of class responsibility
+    - Background: setup context needed across scenarios
+    - Scenario: describes narrative flow (Given / When / Then / And / But)
+    - Scenario Outline: (optional) used for example-driven scenarios
+    - Examples: (optional) data table linking inputs to expected outputs
+
+  rules:
+    - Omit @input or @output if none (do not write "none")
+    - @output must relate to an @input elsewhere or to a @dependency
+    - Only public API is described in @tags
+    - Internal logic stays inside Given/When/Then narratives
+    - Examples define truth tables, test data, or expected flows
+    - One Gherkin# file = one public class or partial class
+    - No UI elements or internal platform details as @output
+
+  placement_notes:
+    - @tags must be placed before Feature
+    - Feature must come before Background
+    - Background comes before first Scenario
+    - Each @method must be declared before its Scenario
+    - Examples are placed after the related Scenario Outline
+
+  syntax_notes:
+    - [$VariableName] is used to mark structured references
+    - Input/output types are typed as (name:type)
+    - Examples must match Scenario Outline placeholders exactly
