@@ -47,6 +47,19 @@ jobs:
       - name: List docs directory before build
         run: ls -la docs/
         
+      - name: Check HomepageFeatures component
+        run: |
+          if [ -f "src/components/HomepageFeatures/index.js" ]; then
+            echo "HomepageFeatures/index.js exists:"
+            cat "src/components/HomepageFeatures/index.js"
+          elif [ -f "src/components/HomepageFeatures/index.tsx" ]; then
+            echo "HomepageFeatures/index.tsx exists:"
+            cat "src/components/HomepageFeatures/index.tsx"
+          else
+            echo "HomepageFeatures component not found in expected locations."
+            find src -name "*.js" -o -name "*.tsx" | grep -i homepage
+          fi
+        
       - name: Build website
         run: npm run build
         
