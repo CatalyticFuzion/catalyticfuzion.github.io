@@ -40,9 +40,19 @@ jobs:
       
       - name: Install dependencies (clean install)
         run: npm install
+        
+      - name: Remove i18n directory if exists
+        run: rm -rf i18n || true
       
+      - name: List docs directory before build
+        run: ls -la docs/
+        
       - name: Build website
         run: npm run build
+        
+      - name: Show build errors if any
+        if: failure()
+        run: cat .docusaurus/build.errors.log || echo "No error log found"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

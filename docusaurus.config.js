@@ -26,6 +26,12 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // Minimal i18n configuration
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+  
   presets: [
     [
       'classic',
