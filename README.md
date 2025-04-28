@@ -1,19 +1,19 @@
 # CatalyticFuzion
 
-CatalyticFuzion er et moderne BDD-værktøj (Behavior-Driven Development) til AI LLM par-udvikling.
+CatalyticFuzion is a modern BDD (Behavior-Driven Development) tool for AI LLM pair development.
 
-## Om Projektet
+## About the Project
 
-Dette repository indeholder dokumentation og ressourcer til CatalyticFuzion-projektet, som er bygget med Docusaurus og hostet på GitHub Pages.
+This repository contains documentation and resources for the CatalyticFuzion project, built with Docusaurus and hosted on GitHub Pages.
 
-## Dokumentation
+## Documentation
 
-For at besøge den fulde dokumentation, gå til [https://lpmwfx.github.io/CatalyticFuzion/](https://lpmwfx.github.io/CatalyticFuzion/)
+To visit the full documentation, go to [https://catalyticfuzion.github.io/CatalyticFuzion/](https://catalyticfuzion.github.io/CatalyticFuzion/)
 
-## Udvikling
+## Development
 
-Projektet er opbygget med Docusaurus, et moderne statisk webstedsværktøj.
+The project is built with Docusaurus, a modern static website tool.
 
-For at køre projektet lokalt:
+To run the project locally:
 
-1. Installer afhængigheder:
+1. Install dependencies:

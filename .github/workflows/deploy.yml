@@ -4,16 +4,16 @@ on:
   push:
     branches:
       - main
-  # Tillader at køre dette workflow manuelt fra Actions fanen
+  # Allows running this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sæt nødvendige tilladelser for GitHub Pages
+# Set required permissions for GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Tillad kun én concurrent deployment
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -47,6 +47,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: CatalyticFuzion/build
+          # Ingen ændringer nødvendige her, da stien til buildet er den samme
 
   # Deployment job
   deploy:

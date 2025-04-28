@@ -10,14 +10,15 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://lpmwfx.github.io',
+  url: 'https://catalyticfuzion.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  // For GitHub pages deployment, it is often '/<projectName>/' 
+  // For organization sites or user sites with format [username].github.io, use '/'
   baseUrl: '/CatalyticFuzion/',
-
+  
   // GitHub pages deployment config.
-  organizationName: 'lpmwfx', // Dit GitHub brugernavn
-  projectName: 'CatalyticFuzion', // Navnet på dit repo
+  organizationName: 'CatalyticFuzion', // GitHub organization name - case-sensitive!
+  projectName: 'CatalyticFuzion', // Repository name
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -39,9 +40,9 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/lpmwfx/CatalyticFuzion/tree/main/CatalyticFuzion',
-        },
-        blog: {
+            'https://github.com/CatalyticFuzion/CatalyticFuzion/tree/main/CatalyticFuzion',
+                  },
+                  blog: {
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -49,7 +50,7 @@ const config: Config = {
           },
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/lpmwfx/CatalyticFuzion/tree/main/CatalyticFuzion',
+            'https://github.com/CatalyticFuzion/CatalyticFuzion/tree/main/CatalyticFuzion',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -76,24 +77,24 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Dokumentation',
+          label: 'Documentation',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/lpmwfx/CatalyticFuzion',
+          href: 'https://github.com/CatalyticFuzion/CatalyticFuzion',
           label: 'GitHub',
           position: 'right',
         },
-      ],
-    },
-    footer: {
-      style: 'dark',
-      links: [
+              ],
+            },
+            footer: {
+              style: 'dark',
+              links: [
         {
           title: 'Docs',
           items: [
             {
-              label: 'Kom Igang',
+              label: 'Get Started',
               to: '/docs/intro',
             },
           ],
@@ -103,7 +104,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/lpmwfx/CatalyticFuzion',
+              href: 'https://github.com/CatalyticFuzion/CatalyticFuzion',
             },
           ],
         },
