@@ -42,18 +42,29 @@ jobs:
           mkdir -p _backup
           cp -r docs _backup/ || echo "No docs to backup"
           cp README.md _backup/ || echo "No README.md to backup"
-
+          cp package.json _backup/ || echo "No package.json to backup"
+      
           # Remove current installation
           rm -rf node_modules package-lock.json .docusaurus build
           
-          # Create a completely fresh Docusaurus installation (non-interactive)
-          npx create-docusaurus@latest temp classic --typescript=false --package-manager=npm --skip-install
+          # Create a completely fresh Docusaurus installation non-interactively
+          # Avoiding the problematic arguments that caused the previous error
+          echo "Creating new Docusaurus template"
+          yes | npx create-docusaurus@latest temp classic
           
-          # Move everything from temp to current directory
-          cp -r temp/* . || echo "Failed to copy files"
-          cp -r temp/.* . 2>/dev/null || echo "No hidden files to copy"
-          ls -la temp/
-          rm -rf temp
+          echo "Listing temp directory contents:"
+          ls -la temp/ || echo "Temp directory not created or empty"
+          
+          # Only try to copy if the temp directory exists and has content
+          if [ -d "temp" ] && [ "$(ls -A temp)" ]; then
+            echo "Copying files from template"
+            cp -r temp/* . || echo "Failed to copy files"
+          else
+            echo "Temp directory not created or empty, skipping copy"
+          fi
+          
+          # Clean up
+          rm -rf temp || echo "No temp directory to remove"
           
           # Restore content from backup
           rm -rf docs
