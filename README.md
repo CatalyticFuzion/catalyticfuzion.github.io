@@ -8,7 +8,7 @@ This repository contains documentation and resources for the CatalyticFuzion pro
 
 ## Documentation
 
-To visit the full documentation, go to [https://catalyticfuzion.github.io/CatalyticFuzion/](https://catalyticfuzion.github.io/CatalyticFuzion/)
+To visit the full documentation, go to [https://catalyticfuzion.github.io/](https://catalyticfuzion.github.io/)
 
 ## Development
 
