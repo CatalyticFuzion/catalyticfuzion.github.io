@@ -46,11 +46,13 @@ jobs:
           # Remove current installation
           rm -rf node_modules package-lock.json .docusaurus build
           
-          # Create a completely fresh Docusaurus installation
-          npx create-docusaurus@latest temp classic
+          # Create a completely fresh Docusaurus installation (non-interactive)
+          npx create-docusaurus@latest temp classic --typescript=false --package-manager=npm --skip-install
           
           # Move everything from temp to current directory
-          cp -r temp/* .
+          cp -r temp/* . || echo "Failed to copy files"
+          cp -r temp/.* . 2>/dev/null || echo "No hidden files to copy"
+          ls -la temp/
           rm -rf temp
           
           # Restore content from backup
