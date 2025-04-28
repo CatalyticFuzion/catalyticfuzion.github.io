@@ -31,95 +31,170 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: npm
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Create static HTML site
+      - name: Create fresh Docusaurus installation
         run: |
-          # Backup existing content
+          # Backup important content
           mkdir -p _backup
-          cp -r docs _backup/ || true
-          cp README.md _backup/ || true
+          cp -r docs _backup/ || echo "No docs to backup"
+          cp README.md _backup/ || echo "No README.md to backup"
+
+          # Remove current installation
+          rm -rf node_modules package-lock.json .docusaurus build
           
-          # Clean slate approach - create a minimal static site
-          rm -rf docs blog src static .docusaurus build || true
-          mkdir -p build
+          # Create a completely fresh Docusaurus installation
+          npx create-docusaurus@latest temp classic
           
-          # Create a simple index.html
-          cat > build/index.html << 'EOF'
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>CatalyticFuzion</title>
-            <style>
-              body {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                line-height: 1.6;
-                color: #333;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 20px;
-              }
-              h1, h2, h3 { 
-                color: #2e6c99;
-              }
-              a {
-                color: #0366d6;
-                text-decoration: none;
-              }
-              a:hover {
-                text-decoration: underline;
-              }
-              .container {
-                margin-top: 40px;
-              }
-              .footer {
-                margin-top: 40px;
-                padding-top: 20px;
-                border-top: 1px solid #eaecef;
-                color: #586069;
-                font-size: 0.9em;
-              }
-            </style>
-          </head>
-          <body>
-            <div class="container">
-              <h1>CatalyticFuzion</h1>
-              <p>CatalyticFuzion is an innovative project aimed at creating a Human-to-AI Domain Specific Language (DSL) by building on concepts from <a href="https://cucumber.io/docs/gherkin/">Gherkin</a> and object-oriented programming paradigms.</p>
-              
-              <h2>Vision</h2>
-              <p>The project originally started as "GherkinSharp," inspired by the Behavior-Driven Development (BDD) paradigm, but has evolved into CatalyticFuzion as we move beyond traditional BDD constraints toward a more flexible and powerful human-AI interface.</p>
-              
-              <p>Our goal is to create a DSL that:</p>
-              <ul>
-                <li>Makes it easier for humans to communicate complex concepts to AI systems</li>
-                <li>Leverages the best of both Gherkin's readable syntax and object-oriented programming</li>
-                <li>Acts as a catalyst for effective human-AI collaboration</li>
-              </ul>
-              
-              <h2>Resources</h2>
-              <ul>
-                <li><a href="https://github.com/catalyticfuzion/catalyticfuzion.github.io">GitHub Repository</a></li>
-                <li><a href="https://cucumber.io/docs/gherkin/">Gherkin Reference</a></li>
-              </ul>
-              
-              <div class="footer">
-                <p>© $(date +%Y) CatalyticFuzion. All rights reserved.</p>
-                <p>Created by <a href="https://github.com/catalyticfuzion">TwistedBrain</a></p>
-              </div>
-            </div>
-          </body>
-          </html>
+          # Move everything from temp to current directory
+          cp -r temp/* .
+          rm -rf temp
+          
+          # Restore content from backup
+          rm -rf docs
+          cp -r _backup/docs . || mkdir -p docs
+          
+          # Create intro.md if it doesn't exist
+          if [ ! -f "docs/intro.md" ]; then
+            cat > docs/intro.md << 'EOF'
+          ---
+          slug: /
+          title: Introduction to CatalyticFuzion
+          sidebar_position: 1
+          ---
+
+          # Introduction to CatalyticFuzion
+
+          CatalyticFuzion is an innovative project aimed at creating a Human-to-AI Domain Specific Language (DSL) by building on concepts from Gherkin and object-oriented programming paradigms.
+
+          ## Vision
+
+          The project originally started as "GherkinSharp," inspired by the Behavior-Driven Development (BDD) paradigm, but has evolved into CatalyticFuzion as we move beyond traditional BDD constraints toward a more flexible and powerful human-AI interface.
+
+          Our goal is to create a DSL that:
+          - Makes it easier for humans to communicate complex concepts to AI systems
+          - Leverages the best of both Gherkin's readable syntax and object-oriented programming
+          - Acts as a catalyst for effective human-AI collaboration
           EOF
+          fi
           
-          # Add a simple 404 page
-          cp build/index.html build/404.html
+          # Update docusaurus.config.js with our settings
+          cat > docusaurus.config.js << 'EOF'
+          // @ts-check
+          // Simple configuration file for Docusaurus
+
+          /** @type {import('@docusaurus/types').Config} */
+          const config = {
+            title: 'CatalyticFuzion',
+            tagline: 'Human-to-AI Domain Specific Language',
+            favicon: 'img/favicon.ico',
           
-          echo "Created minimal static site"
-          ls -la build/
+            url: 'https://catalyticfuzion.github.io',
+            baseUrl: '/',
+          
+            organizationName: 'catalyticfuzion',
+            projectName: 'catalyticfuzion.github.io',
+          
+            onBrokenLinks: 'throw',
+            onBrokenMarkdownLinks: 'warn',
+          
+            i18n: {
+              defaultLocale: 'en',
+              locales: ['en'],
+            },
+          
+            presets: [
+              [
+                'classic',
+                /** @type {import('@docusaurus/preset-classic').Options} */
+                ({
+                  docs: {
+                    routeBasePath: '/',
+                    sidebarPath: require.resolve('./sidebars.js'),
+                    editUrl: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io/tree/main',
+                  },
+                  blog: false,
+                  theme: {
+                    customCss: require.resolve('./src/css/custom.css'),
+                  },
+                }),
+              ],
+            ],
+          
+            themeConfig:
+              /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+              ({
+                navbar: {
+                  title: 'CatalyticFuzion',
+                  logo: {
+                    alt: 'CatalyticFuzion Logo',
+                    src: 'img/logo.svg',
+                  },
+                  items: [
+                    {
+                      href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
+                      label: 'GitHub',
+                      position: 'right',
+                    },
+                  ],
+                },
+                footer: {
+                  style: 'dark',
+                  links: [
+                    {
+                      title: 'Docs',
+                      items: [
+                        {
+                          label: 'Introduction',
+                          to: '/',
+                        },
+                      ],
+                    },
+                    {
+                      title: 'Community',
+                      items: [
+                        {
+                          label: 'GitHub Discussions',
+                          href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io/discussions',
+                        },
+                      ],
+                    },
+                    {
+                      title: 'More',
+                      items: [
+                        {
+                          label: 'GitHub',
+                          href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
+                        },
+                      ],
+                    },
+                  ],
+                  copyright: `Copyright © ${new Date().getFullYear()} CatalyticFuzion. Built with Docusaurus.`,
+                },
+                prism: {
+                  theme: require('prism-react-renderer/themes/github'),
+                  darkTheme: require('prism-react-renderer/themes/dracula'),
+                },
+              }),
+          };
+          
+          module.exports = config;
+          EOF
+      
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+      
+      - name: Build website
+        run: npm run build
+        
+      - name: Display build errors if any
+        if: failure()
+        run: |
+          ls -la || true
+          cat .docusaurus/build.errors.log || echo "No error log found"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
