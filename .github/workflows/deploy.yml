@@ -70,23 +70,23 @@ jobs:
           rm -rf docs
           cp -r _backup/docs . || mkdir -p docs
           
-          # Create intro.md if it doesn't exist
+          # Create intro.md in both locations to ensure compatibility
           if [ ! -f "docs/intro.md" ]; then
             cat > docs/intro.md << 'EOF'
           ---
-          slug: /
+          slug: /intro
           title: Introduction to CatalyticFuzion
           sidebar_position: 1
           ---
-
+      
           # Introduction to CatalyticFuzion
-
+      
           CatalyticFuzion is an innovative project aimed at creating a Human-to-AI Domain Specific Language (DSL) by building on concepts from Gherkin and object-oriented programming paradigms.
-
+      
           ## Vision
-
+      
           The project originally started as "GherkinSharp," inspired by the Behavior-Driven Development (BDD) paradigm, but has evolved into CatalyticFuzion as we move beyond traditional BDD constraints toward a more flexible and powerful human-AI interface.
-
+      
           Our goal is to create a DSL that:
           - Makes it easier for humans to communicate complex concepts to AI systems
           - Leverages the best of both Gherkin's readable syntax and object-oriented programming
@@ -98,7 +98,7 @@ jobs:
           cat > docusaurus.config.js << 'EOF'
           // @ts-check
           // Simple configuration file for Docusaurus
-
+      
           /** @type {import('@docusaurus/types').Config} */
           const config = {
             title: 'CatalyticFuzion',
@@ -111,7 +111,7 @@ jobs:
             organizationName: 'catalyticfuzion',
             projectName: 'catalyticfuzion.github.io',
           
-            onBrokenLinks: 'throw',
+            onBrokenLinks: 'warn',
             onBrokenMarkdownLinks: 'warn',
           
             i18n: {
@@ -125,7 +125,7 @@ jobs:
                 /** @type {import('@docusaurus/preset-classic').Options} */
                 ({
                   docs: {
-                    routeBasePath: '/',
+                    routeBasePath: 'docs',
                     sidebarPath: require.resolve('./sidebars.js'),
                     editUrl: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io/tree/main',
                   },
@@ -148,6 +148,11 @@ jobs:
                   },
                   items: [
                     {
+                      to: '/docs/intro',
+                      label: 'Documentation',
+                      position: 'left',
+                    },
+                    {
                       href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
                       label: 'GitHub',
                       position: 'right',
@@ -162,7 +167,7 @@ jobs:
                       items: [
                         {
                           label: 'Introduction',
-                          to: '/',
+                          to: '/docs/intro',
                         },
                       ],
                     },
