@@ -1,0 +1,39 @@
+name: Deploy til GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    # Gennemse GitHub Actions dokumentation hvis du vil definere flere triggers
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    name: Deploy til GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          
+      - name: Installer afhængigheder
+        run: npm ci
+        
+      - name: Byg website
+        run: npm run build
+
+      - name: Deploy til GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          # Sørg for at bruge den rigtige projektmappe der indeholder build filerne
+          # Dette hjælper med at håndtere JetBrains IDEA Webstorm projektmappe problematikken

@@ -4,49 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ac25e12-fdda-4965-9f05-b27bd3b220bd" name="Changes" comment="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/blog/2019-05-28-first-blog-post.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/blog/2019-05-29-long-blog-post.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/blog/2021-08-01-mdx-blog-post.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/blog/2021-08-26-welcome/docusaurus-plushie-banner.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/blog/2021-08-26-welcome/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/blog/authors.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/blog/tags.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/intro.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/_category_.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/congratulations.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/create-a-blog-post.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/create-a-document.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/create-a-page.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/deploy-your-site.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/markdown-features.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-extras/_category_.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-extras/img/docsVersionDropdown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-extras/img/localeDropdown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-extras/manage-docs-versions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-extras/translate-your-site.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/docusaurus.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/sidebars.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/src/components/HomepageFeatures/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/src/components/HomepageFeatures/styles.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/src/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/src/pages/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/src/pages/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/src/pages/markdown-page.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/static/.nojekyll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/static/img/docusaurus-social-card.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/static/img/docusaurus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/static/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/static/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/static/img/undraw_docusaurus_mountain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/static/img/undraw_docusaurus_react.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/static/img/undraw_docusaurus_tree.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classic/tsconfig.json" afterDir="false" />
+    <list default="true" id="4ac25e12-fdda-4965-9f05-b27bd3b220bd" name="Changes" comment="Add initial styles, blog post tutorial, translations, and assets&#10;&#10;This commit introduces foundational CSS for homepage features, blog post creation tutorials, support for site translations, and accompanying static assets such as images and configuration files. These updates are key for improving site appearance, multi-language support, and user guidance.">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/intro.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sidebars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HomepageFeatures/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HomepageFeatures/styles.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/undraw_docusaurus_mountain.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/undraw_docusaurus_react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/undraw_docusaurus_tree.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,27 +36,32 @@
         <option name="title" value="Current Branch" />
       </GitPushTagMode>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "lpmwfx"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lpmwfx&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/CatalyticFuzion/catalyticfuzion.github.io.git",
-    "accountId": "a7f8999c-2cb3-4e37-a719-a7509e08ef63"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CatalyticFuzion/catalyticfuzion.github.io.git&quot;,
+    &quot;accountId&quot;: &quot;a7f8999c-2cb3-4e37-a719-a7509e08ef63&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2wLjEEKB935iW3UbKJB2idx9z8t" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -89,9 +69,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "64adaf98",
     "last_opened_file_path": "/Users/larsmathiasen/Repo/CatalyticFuzion/CatalyticFuzion/docs/intro",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -113,6 +94,13 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="NodeJSConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -128,6 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745827635723</updated>
       <workItem from="1745827636798" duration="12433000" />
+      <workItem from="1745914949454" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
       <option name="closed" value="true" />
@@ -409,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745855636472</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Add initial styles, blog post tutorial, translations, and assets&#10;&#10;This commit introduces foundational CSS for homepage features, blog post creation tutorials, support for site translations, and accompanying static assets such as images and configuration files. These updates are key for improving site appearance, multi-language support, and user guidance.">
+      <option name="closed" value="true" />
+      <created>1745915108798</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1745915108798</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,6 +431,7 @@
     <MESSAGE value="Skift fra Docusaurus til en simpel statisk HTML-løsning" />
     <MESSAGE value="Improve Docusaurus setup script in deploy workflow&#10;&#10;Added non-interactive flags to streamline Docusaurus creation and improved file copying to handle hidden files. Included listing of temporary directory contents for better debugging. These changes enhance robustness and clarity in the deployment process." />
     <MESSAGE value="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring" />
+    <MESSAGE value="Add initial styles, blog post tutorial, translations, and assets&#10;&#10;This commit introduces foundational CSS for homepage features, blog post creation tutorials, support for site translations, and accompanying static assets such as images and configuration files. These updates are key for improving site appearance, multi-language support, and user guidance." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial styles, blog post tutorial, translations, and assets&#10;&#10;This commit introduces foundational CSS for homepage features, blog post creation tutorials, support for site translations, and accompanying static assets such as images and configuration files. These updates are key for improving site appearance, multi-language support, and user guidance." />
   </component>
 </project>
