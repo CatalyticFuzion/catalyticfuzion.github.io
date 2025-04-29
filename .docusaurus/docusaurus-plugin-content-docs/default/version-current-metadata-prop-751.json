@@ -1,0 +1,47 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "category",
+        "label": "Introduktion",
+        "items": [
+          {
+            "type": "link",
+            "label": "CatalyticFuzion Manifesto",
+            "href": "/docs/intro",
+            "docId": "intro",
+            "unlisted": false
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      }
+    ]
+  },
+  "docs": {
+    "examples": {
+      "id": "examples",
+      "title": "Eksempler på Gherkin",
+      "description": "Her er nogle eksempler på hvordan Gherkin# kan bruges i praksis til at definere krav, arkitektur og tests samtidig."
+    },
+    "intro": {
+      "id": "intro",
+      "title": "CatalyticFuzion Manifesto",
+      "description": "Vision",
+      "sidebar": "tutorialSidebar"
+    },
+    "structure": {
+      "id": "structure",
+      "title": "Struktur i Gherkin",
+      "description": "Gherkin# bruger en klar struktur til at definere systemkomponenter og deres funktionalitet."
+    }
+  }
+}

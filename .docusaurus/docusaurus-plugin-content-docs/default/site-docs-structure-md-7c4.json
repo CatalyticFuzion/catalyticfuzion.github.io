@@ -1,0 +1,17 @@
+{
+  "id": "structure",
+  "title": "Struktur i Gherkin",
+  "description": "Gherkin# bruger en klar struktur til at definere systemkomponenter og deres funktionalitet.",
+  "source": "@site/docs/structure.md",
+  "sourceDirName": ".",
+  "slug": "/structure",
+  "permalink": "/docs/structure",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  }
+}

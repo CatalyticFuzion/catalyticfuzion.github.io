@@ -1,0 +1,117 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/docs",
+          "tagsPath": "/docs/tags",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/larsmathiasen/Repo/CatalyticFuzion/CatalyticFuzion/sidebars.js",
+          "contentPath": "/Users/larsmathiasen/Repo/CatalyticFuzion/CatalyticFuzion/docs",
+          "contentPathLocalized": "/Users/larsmathiasen/Repo/CatalyticFuzion/CatalyticFuzion/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "id": "examples",
+              "title": "Eksempler på Gherkin",
+              "description": "Her er nogle eksempler på hvordan Gherkin# kan bruges i praksis til at definere krav, arkitektur og tests samtidig.",
+              "source": "@site/docs/examples.md",
+              "sourceDirName": ".",
+              "slug": "/examples",
+              "permalink": "/docs/examples",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              }
+            },
+            {
+              "id": "intro",
+              "title": "CatalyticFuzion Manifesto",
+              "description": "Vision",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/intro",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "structure",
+              "title": "Struktur i Gherkin",
+              "description": "Gherkin# bruger en klar struktur til at definere systemkomponenter og deres funktionalitet.",
+              "source": "@site/docs/structure.md",
+              "sourceDirName": ".",
+              "slug": "/structure",
+              "permalink": "/docs/structure",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "category",
+                "label": "Introduktion",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "intro"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

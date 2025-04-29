@@ -1,0 +1,77 @@
+{
+  "/__docusaurus/debug/-d57": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-3-cf-7da"
+    }
+  },
+  "/__docusaurus/debug/config/-e12": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-3-cf-7da"
+    }
+  },
+  "/__docusaurus/debug/content/-98c": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-3-cf-7da"
+    },
+    "allContent": "allContent---docusaurus-debug-content-246-d88"
+  },
+  "/__docusaurus/debug/globalData/-3a3": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-3-cf-7da"
+    }
+  },
+  "/__docusaurus/debug/metadata/-057": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-3-cf-7da"
+    }
+  },
+  "/__docusaurus/debug/registry/-9d2": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-3-cf-7da"
+    }
+  },
+  "/__docusaurus/debug/routes/-fbd": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-3-cf-7da"
+    }
+  },
+  "/docs/-210": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docs-129-9c2"
+    }
+  },
+  "/docs/-95e": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "version": "version---docs-935-739"
+  },
+  "/docs/-ba6": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/examples/-f59": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-examples-09-d-6ba"
+  },
+  "/docs/intro/-688": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-7e4"
+  },
+  "/docs/structure/-878": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-structure-7-c-4-1e3"
+  },
+  "/-18c": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---d-69-1d0"
+    },
+    "config": "config---5-e-9-4f3"
+  }
+}

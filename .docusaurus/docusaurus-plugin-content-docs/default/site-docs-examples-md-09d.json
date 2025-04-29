@@ -1,0 +1,17 @@
+{
+  "id": "examples",
+  "title": "Eksempler på Gherkin",
+  "description": "Her er nogle eksempler på hvordan Gherkin# kan bruges i praksis til at definere krav, arkitektur og tests samtidig.",
+  "source": "@site/docs/examples.md",
+  "sourceDirName": ".",
+  "slug": "/examples",
+  "permalink": "/docs/examples",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  }
+}

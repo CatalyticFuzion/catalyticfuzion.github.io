@@ -1,0 +1,177 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "237": [
+      237
+    ],
+    "17896441": [
+      869,
+      401
+    ],
+    "main": [
+      354,
+      869,
+      792
+    ],
+    "runtime~main": [
+      792,
+      869,
+      354
+    ],
+    "0e384e19": [
+      976
+    ],
+    "129eda34": [
+      660
+    ],
+    "5e95c892": [
+      647
+    ],
+    "935f2afb": [
+      581
+    ],
+    "a7bd4aaa": [
+      98
+    ],
+    "a94703ab": [
+      869,
+      48
+    ],
+    "c4f5d8e4": [
+      869,
+      634
+    ],
+    "d69edd87": [
+      416
+    ],
+    "styles": [
+      48,
+      354,
+      401,
+      634,
+      792,
+      869
+    ]
+  },
+  "assets": {
+    "48": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.57ceba9a.js",
+          "hash": "dd24e7e6313e0d79",
+          "publicPath": "/repository-name/assets/js/a94703ab.57ceba9a.js"
+        }
+      ]
+    },
+    "98": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.152f96a6.js",
+          "hash": "4dc0cd8146757933",
+          "publicPath": "/repository-name/assets/js/a7bd4aaa.152f96a6.js"
+        }
+      ]
+    },
+    "237": {
+      "js": [
+        {
+          "file": "assets/js/237.40efc499.js",
+          "hash": "cebe36215d47678e",
+          "publicPath": "/repository-name/assets/js/237.40efc499.js"
+        }
+      ]
+    },
+    "354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.15a31e7f.js",
+          "hash": "f72ef9ca335edabb",
+          "publicPath": "/repository-name/assets/js/runtime~main.15a31e7f.js"
+        }
+      ]
+    },
+    "401": {
+      "js": [
+        {
+          "file": "assets/js/17896441.c64aa3f1.js",
+          "hash": "a3849c780c838ddb",
+          "publicPath": "/repository-name/assets/js/17896441.c64aa3f1.js"
+        }
+      ]
+    },
+    "416": {
+      "js": [
+        {
+          "file": "assets/js/d69edd87.a1f72813.js",
+          "hash": "140160709f916b6c",
+          "publicPath": "/repository-name/assets/js/d69edd87.a1f72813.js"
+        }
+      ]
+    },
+    "581": {
+      "js": [
+        {
+          "file": "assets/js/935f2afb.c4bcdbf6.js",
+          "hash": "6146b0996fe5dec5",
+          "publicPath": "/repository-name/assets/js/935f2afb.c4bcdbf6.js"
+        }
+      ]
+    },
+    "634": {
+      "js": [
+        {
+          "file": "assets/js/c4f5d8e4.d1dfa244.js",
+          "hash": "561e4142e7066d04",
+          "publicPath": "/repository-name/assets/js/c4f5d8e4.d1dfa244.js"
+        }
+      ]
+    },
+    "647": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.02a294b6.js",
+          "hash": "1af87fd5250b6cd4",
+          "publicPath": "/repository-name/assets/js/5e95c892.02a294b6.js"
+        }
+      ]
+    },
+    "660": {
+      "js": [
+        {
+          "file": "assets/js/129eda34.dfb58c40.js",
+          "hash": "88ada5ed10d88474",
+          "publicPath": "/repository-name/assets/js/129eda34.dfb58c40.js"
+        }
+      ]
+    },
+    "792": {
+      "js": [
+        {
+          "file": "assets/js/main.859be0ca.js",
+          "hash": "7a6a4f3c80fc6281",
+          "publicPath": "/repository-name/assets/js/main.859be0ca.js"
+        }
+      ]
+    },
+    "869": {
+      "css": [
+        {
+          "file": "assets/css/styles.07aa96a9.css",
+          "hash": "5d99781f03fa5ae9",
+          "publicPath": "/repository-name/assets/css/styles.07aa96a9.css"
+        }
+      ]
+    },
+    "976": {
+      "js": [
+        {
+          "file": "assets/js/0e384e19.9b714aa5.js",
+          "hash": "0e470b1ed6466951",
+          "publicPath": "/repository-name/assets/js/0e384e19.9b714aa5.js"
+        }
+      ]
+    }
+  }
+}
