@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Kom i gang - 5 min ⏱️
+            Læs Manifestet
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`Velkommen til ${siteConfig.title}`}
-      description="Beskrivelse af hjemmesiden">
+      description="Gherkin# - Fra narrativ til arkitektur. En struktureret, maskinlæsbar og arkitekturkompatibel DSL til kravspecifikation.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -5,32 +5,30 @@ const { themes } = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Mit Docusaurus Site',
-  tagline: 'En simpel Docusaurus site',
+  title: 'CatalyticFuzion',
+  tagline: 'From Narrative to Architecture - Where Behavior Meets Structure and Software Grows from Stories',
   favicon: 'img/favicon.ico',
 
-  // Indstil URL'en til dit GitHub Pages site
-  // Erstat 'organization_or_username' med dit GitHub brugernavn eller organisationsnavn
-  url: 'https://organization_or_username.github.io',
-  // GitHub Pages deler projektnavnet som base URL
-  // erstat 'repository-name' med dit repository navn
-  baseUrl: '/repository-name/',
+  // Set the URL for GitHub Pages site
+  url: 'https://catalyticfuzion.github.io',
+  // GitHub Pages automatically uses the root for organization/user sites
+  baseUrl: '/',
   
-  // Vigtigt for GitHub Pages deployment
+  // Important for GitHub Pages deployment
   trailingSlash: true,
 
-  // GitHub Pages deployment konfiguration
-  organizationName: 'organization_or_username', // Normalt dit GitHub brugernavn
-  projectName: 'repository-name', // Normalt dit repository navn
-  deploymentBranch: 'gh-pages', // Navnet på grenen der bruges til deployment
+  // GitHub Pages deployment configuration
+  organizationName: 'catalyticfuzion', 
+  projectName: 'catalyticfuzion.github.io', 
+  deploymentBranch: 'gh-pages', 
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Selv for træløse websites, vi ønsker at have en '/'-placeret 404 side
+  // Even for tree-less websites, we want to have a proper root-based 404 page
   i18n: {
-    defaultLocale: 'da',
-    locales: ['da'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -40,13 +38,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Fjern denne kommentar for at tilføje redigeringslink
-          // editUrl: 'https://github.com/organization_or_username/repository-name/tree/main/',
+          // editUrl: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
-          // Fjern denne kommentar for at tilføje redigeringslink
-          // editUrl: 'https://github.com/organization_or_username/repository-name/tree/main/',
+          // editUrl: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -58,23 +54,24 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/octo.png',
       navbar: {
-        title: 'Mit Site',
+        title: 'CatalyticFuzion',
         logo: {
-          alt: 'Mit Site Logo',
-          src: 'img/logo.svg',
+          alt: 'CatalyticFuzion Logo',
+          src: 'img/octo.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Dokumentation',
+            label: 'Manifesto',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/docs/structure', label: 'Structure', position: 'left'},
+          {to: '/docs/examples', label: 'Examples', position: 'left'},
           {
-            href: 'https://github.com/organization_or_username/repository-name',
+            href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -87,47 +84,35 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Kom i gang',
+                label: 'Manifesto',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Fællesskab',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Structure',
+                to: '/docs/structure',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Examples',
+                to: '/docs/examples',
               },
             ],
           },
           {
-            title: 'Mere',
+            title: 'Community',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/organization_or_username/repository-name',
+                label: 'GitHub Discussions',
+                href: 'https://github.com/catalyticfuzion/catalyticfuzion.github.io/discussions',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Mit Projekt. Bygget med Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} CatalyticFuzion Project. Built with Docusaurus.`,
       },
       prism: {
         theme: themes.github,
         darkTheme: themes.dracula,
+        additionalLanguages: ['csharp', 'gherkin'],
       },
     }),
 };

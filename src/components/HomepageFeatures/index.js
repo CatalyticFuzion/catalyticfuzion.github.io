@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Nem at bruge',
+    title: 'Requirements and Structure United',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus blev designet fra grunden af for at være let at installere
-        og bruge til at få din hjemmeside op at køre hurtigt.
+        CatalyticFuzion structures requirements to naturally map to system architecture.
+        It binds behavior descriptions directly to the underlying system structure.
       </>
     ),
   },
   {
-    title: 'Fokuser på det vigtige',
+    title: 'Machine-Readable and AI-Compatible',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lader dig fokusere på dit indhold, og vi tager os af resten.
-        Gå i gang med at skrive dine dokumenter i markdown.
+        CatalyticFuzion makes requirements machine-readable and AI-parsable, enabling iterative 
+        automated coding. It supports both testing and system design with a single, structured DSL.
       </>
     ),
   },
   {
-    title: 'Drevet af React',
+    title: 'Human-AI Collaborative DSL',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Udvid eller tilpas dit website layout ved at genbruge React.
-        Docusaurus kan udvides, mens du bibeholder dets kernefunktionalitet.
+        CatalyticFuzion creates a practical language bridging humans and AI systems, 
+        enabling natural collaboration throughout the entire software development process.
       </>
     ),
   },

@@ -24,3 +24,16 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Logo styling in navbar */
+.navbar__logo {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.navbar__logo img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
