@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ac25e12-fdda-4965-9f05-b27bd3b220bd" name="Changes" comment="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/blog/2019-05-28-first-blog-post.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/blog/2019-05-29-long-blog-post.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/blog/2021-08-01-mdx-blog-post.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/blog/2021-08-26-welcome/docusaurus-plushie-banner.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/blog/2021-08-26-welcome/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/blog/authors.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/blog/tags.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/intro.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/_category_.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/congratulations.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/create-a-blog-post.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/create-a-document.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/create-a-page.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/deploy-your-site.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-basics/markdown-features.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-extras/_category_.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-extras/img/docsVersionDropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-extras/img/localeDropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-extras/manage-docs-versions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docs/tutorial-extras/translate-your-site.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/docusaurus.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/sidebars.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/src/components/HomepageFeatures/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/src/components/HomepageFeatures/styles.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/src/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/src/pages/index.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/src/pages/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/src/pages/markdown-page.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/static/.nojekyll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/static/img/docusaurus-social-card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/static/img/docusaurus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/static/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/static/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/static/img/undraw_docusaurus_mountain.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/static/img/undraw_docusaurus_react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/static/img/undraw_docusaurus_tree.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classic/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "lpmwfx"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/CatalyticFuzion/catalyticfuzion.github.io.git",
+    "accountId": "a7f8999c-2cb3-4e37-a719-a7509e08ef63"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2wLjEEKB935iW3UbKJB2idx9z8t" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/larsmathiasen/Repo/CatalyticFuzion/CatalyticFuzion/docs/intro",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/Users/larsmathiasen/Library/Application Support/JetBrains/WebStorm2025.1/node/versions/23.11.0/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "/Users/larsmathiasen/Repo/CatalyticFuzion/CatalyticFuzion/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/intro" />
+      <recent name="$PROJECT_DIR$/work_docs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ac25e12-fdda-4965-9f05-b27bd3b220bd" name="Changes" comment="" />
+      <created>1745827635723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745827635723</updated>
+      <workItem from="1745827636798" duration="12433000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745828492427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745828492427</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745828608313</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745828608313</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745829208491</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745829208491</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745829920017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745829920017</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745832341689</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745832341689</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745832842070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745832842070</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745843585345</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745843585345</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745844136853</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745844136853</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745844164361</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745844164361</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745844648993</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745844648993</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745844901478</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745844901478</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745845139710</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745845139710</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745845273842</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745845273842</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745845347712</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745845347712</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745845377020</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1745845377020</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745845618643</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1745845618643</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings.">
+      <option name="closed" value="true" />
+      <created>1745845821550</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1745845821550</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.github/workflows/deploy.yml">
+      <option name="closed" value="true" />
+      <created>1745846059672</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1745846059672</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Flyt filer til roden af repositoriet">
+      <option name="closed" value="true" />
+      <created>1745846282379</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1745846282379</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Flyt filer til roden af repositoriet">
+      <option name="closed" value="true" />
+      <created>1745847062326</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1745847062326</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Flyt filer til roden af repositoriet">
+      <option name="closed" value="true" />
+      <created>1745847174283</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1745847174283</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Flyt filer til roden af repositoriet">
+      <option name="closed" value="true" />
+      <created>1745848640817</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1745848640817</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Flyt filer til roden af repositoriet">
+      <option name="closed" value="true" />
+      <created>1745849238884</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1745849238884</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Flyt filer til roden af repositoriet">
+      <option name="closed" value="true" />
+      <created>1745849250447</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1745849250447</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Update site localization and content for English-only support&#10;&#10;Replaced Danish localization with English as the default and sole language across the site. Updated all labels, navigation, and content to reflect the new language focus, including the introduction of new English documentation and blog author configuration.">
+      <option name="closed" value="true" />
+      <created>1745849466375</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1745849466375</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Update site localization and content for English-only support&#10;&#10;Replaced Danish localization with English as the default and sole language across the site. Updated all labels, navigation, and content to reflect the new language focus, including the introduction of new English documentation and blog author configuration.">
+      <option name="closed" value="true" />
+      <created>1745849787296</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1745849787296</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update site localization and content for English-only support&#10;&#10;Replaced Danish localization with English as the default and sole language across the site. Updated all labels, navigation, and content to reflect the new language focus, including the introduction of new English documentation and blog author configuration.">
+      <option name="closed" value="true" />
+      <created>1745850150104</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1745850150104</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Skift fra Docusaurus til en simpel statisk HTML-løsning">
+      <option name="closed" value="true" />
+      <created>1745851522052</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1745851522052</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Skift fra Docusaurus til en simpel statisk HTML-løsning">
+      <option name="closed" value="true" />
+      <created>1745851997588</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1745851997588</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Improve Docusaurus setup script in deploy workflow&#10;&#10;Added non-interactive flags to streamline Docusaurus creation and improved file copying to handle hidden files. Included listing of temporary directory contents for better debugging. These changes enhance robustness and clarity in the deployment process.">
+      <option name="closed" value="true" />
+      <created>1745852161060</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1745852161060</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring stability and robustness during deployments.">
+      <option name="closed" value="true" />
+      <created>1745852338772</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1745852338772</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring">
+      <option name="closed" value="true" />
+      <created>1745852640601</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1745852640601</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring">
+      <option name="closed" value="true" />
+      <created>1745854358650</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1745854358650</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring">
+      <option name="closed" value="true" />
+      <created>1745854493742</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1745854493742</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring">
+      <option name="closed" value="true" />
+      <created>1745855636472</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1745855636472</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add GitHub Pages deployment workflow and update Docusaurus config&#10;&#10;Created a deployment workflow to automate builds and deployments to GitHub Pages. Updated Docusaurus configuration to support deployment by setting base URL, organization, project name, and other site-specific settings." />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.github/workflows/deploy.yml" />
+    <MESSAGE value="Flyt filer til roden af repositoriet" />
+    <MESSAGE value="Update site localization and content for English-only support&#10;&#10;Replaced Danish localization with English as the default and sole language across the site. Updated all labels, navigation, and content to reflect the new language focus, including the introduction of new English documentation and blog author configuration." />
+    <MESSAGE value="Skift fra Docusaurus til en simpel statisk HTML-løsning" />
+    <MESSAGE value="Improve Docusaurus setup script in deploy workflow&#10;&#10;Added non-interactive flags to streamline Docusaurus creation and improved file copying to handle hidden files. Included listing of temporary directory contents for better debugging. These changes enhance robustness and clarity in the deployment process." />
+    <MESSAGE value="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revise Docusaurus setup to resolve installation issues&#10;&#10;Updated the Docusaurus installation script to remove problematic arguments causing errors and added safeguards for handling the temp directory. Improved backup and cleanup steps, ensuring" />
+  </component>
+</project>
